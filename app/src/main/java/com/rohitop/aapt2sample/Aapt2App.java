@@ -1,10 +1,10 @@
-package com.rohitop.toolssample;
+package com.rohitop.aapt2sample;
 
 import android.app.Application;
 
 import cat.ereza.customactivityoncrash.config.CaocConfig;
 
-public class ToolsApp extends Application {
+public class Aapt2App extends Application {
 
 	@Override
 	public void onCreate() {

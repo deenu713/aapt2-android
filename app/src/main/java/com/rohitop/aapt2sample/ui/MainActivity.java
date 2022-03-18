@@ -1,4 +1,4 @@
-package com.rohitop.toolssample.ui;
+package com.rohitop.aapt2sample.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import java.util.Arrays;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.rohitop.toolssample.R;
+import com.rohitop.aapt2sample.R;
 
 import com.android.tools.aapt2.Aapt2Jni;
 import com.android.tools.aapt2.Aapt2JniDiagnostics;
@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
 		run.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View p1) {
-				  String[] args = {"--version"};
-				
+					String[] args = {""};
+
 					Aapt2Jni.nativeCompile(Arrays.asList(args), new Aapt2JniDiagnostics() {
 							@Override
 							public void log(int logLevel, String path, long line, String message) {
