@@ -8,7 +8,7 @@ public class Aapt2Jni {
 	public static native int nativeLink(List<String> arguments, Aapt2JniDiagnostics diagnostics);
 	
 	private static boolean libLoaded = false;
-	private static final String LIB_NAME = "aapt2";
+	private static final String LIB_NAME = "aapt2_jni";
 
     static {
 		initLib();
